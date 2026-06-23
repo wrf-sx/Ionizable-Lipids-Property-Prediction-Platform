@@ -96,7 +96,7 @@ def main():
 
     st.title("ILs Property Prediction Platform")
     st.markdown("Input SMILES string of ILs for property prediction")
-
+'''
     with st.expander("Deployment dependency note"):
         st.markdown(
             """
@@ -121,7 +121,7 @@ def main():
             ```
             """
         )
-
+ '''
     if Chem is None or AllChem is None:
         st.error(
             "RDKit import failed. Please add `rdkit` or `rdkit-pypi` to `requirements.txt` "
