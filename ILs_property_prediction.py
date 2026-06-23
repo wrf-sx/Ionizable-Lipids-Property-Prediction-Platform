@@ -6,9 +6,6 @@ from rdkit.Chem import AllChem
 import joblib
 import os
 
-# Set network URL
-#NETWORK_URL = "http://ILspropertyprediction.computpharm.org"
-
 # Define SMILES standardization function
 def standardize_smiles(smiles):
     try:
