@@ -96,29 +96,11 @@ def main():
 
     st.title("ILs Property Prediction Platform")
     st.markdown("Input SMILES string of ILs for property prediction")
-'''
-    with st.expander("Deployment dependency note"):
+
+    with st.expander("Prediction note"):
         st.markdown(
             """
-            If this app fails on Streamlit Cloud with `ModuleNotFoundError`,
-            please make sure your GitHub repository contains a `requirements.txt`
-            file including:
-
-            ```txt
-            streamlit
-            pandas
-            numpy
-            joblib
-            scikit-learn
-            lightgbm
-            rdkit
-            ```
-
-            If `rdkit` fails to install, try replacing it with:
-
-            ```txt
-            rdkit-pypi
-            ```
+            Please ensure that you are entering the standard SMILES string for ionizable lipids, as other formats are currently not supported.
             """
         )
  
@@ -128,7 +110,7 @@ def main():
             "and redeploy the app."
         )
         st.stop()
-'''
+
     smiles_input = st.text_input("Enter SMILES string of ILs:", "")
 
     if st.button("Predict"):
