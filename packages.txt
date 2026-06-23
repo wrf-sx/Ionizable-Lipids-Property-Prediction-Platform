@@ -1,2 +1,5 @@
+zlib1g-dev
 libxrender1
 libxext6
+libgl1
+
