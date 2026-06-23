@@ -121,14 +121,14 @@ def main():
             ```
             """
         )
- '''
+ 
     if Chem is None or AllChem is None:
         st.error(
             "RDKit import failed. Please add `rdkit` or `rdkit-pypi` to `requirements.txt` "
             "and redeploy the app."
         )
         st.stop()
-
+'''
     smiles_input = st.text_input("Enter SMILES string of ILs:", "")
 
     if st.button("Predict"):
