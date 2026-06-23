@@ -67,21 +67,6 @@ def main():
             return
             
         # Define formulation features
-        pka_formulation = {
-            "LipRat_IL": 0.5, "LipRat_Cho": 0.385, "LipRat_Help": 0.1, 
-            "LipRat_PEG": 0.015, "Helper_DPhyPE": 0, "Helper_DSPC": 1,
-            "PEG_type_DMG-PEG": 1, "PEG_type_PEG-DMA": 0, "Protein_hEPO": 0,
-            "Protein_luciferase": 1, "N/P ratio": 6, "Mass ratio": -1
-        }
-        
-        eff_formulation = {
-            'LipRat_IL': 0.5, 'LipRat_Cho': 0.385, 'LipRat_Help': 0.1,
-            'LipRat_PEG': 0.015, 'Helper_DSPC': 1, 'PEG_DMG-PEG2000': 1,
-            'PEG_DMPE-PEG2000': 0, 'PEG_PEG-DMA': 0, 'PEG_PEG2000-C-DMA': 0,
-            'Protein_eGEP': 0, 'Protein_hEPO': 0, 'Protein_luciferase': 1,
-            'Mice_BALB/c': 1, 'Mice_C57BL/6': 0, 'Mice_CD-1': 0, 'Mice_ICR': 0,
-            'Time': 4, 'N/P ratio': 6, 'Mass ratio': -1
-        }
         
         # Build feature sets
         pka_features = add_formulation_features(ecfp, pka_formulation)
