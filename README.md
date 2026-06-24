@@ -1,6 +1,6 @@
 # Ionizable-Lipids-Function-Prediction-Platform
 
-Input your ionizable lipid SMILES and let us predict its apparent pKa, delivery efficiency, and endosomal membrane fusion properties.
+Input your ionizable lipid SMILES and let us predict its apparent pKa, delivery efficiency, and endosomal membrane fusion ability.
 
 Please use our deployed streamlit app (website below) to make predictions.
 
